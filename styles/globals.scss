@@ -1,0 +1,93 @@
+@import "~bulma/bulma";
+$breakpoints: (
+  768px: 256px,
+  1024px: 296px,
+);
+.profile-negative-shift {
+  margin-top: -30px;
+}
+@each $width, $tab-space in $breakpoints {
+  @media screen and (min-width: $width) {
+    .profile-space {
+      width: $tab-space;
+    }
+  }
+}
+.profile-gap {
+  gap: 2rem;
+}
+.tab-content {
+  border-radius: 7%;
+  transition-property: "background-color";
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+.tab-highlight:hover > .tab-content {
+  background-color: #ddd;
+}
+.tab-is-active {
+  font-weight: 600;
+  border-bottom: #f00 solid 3px;
+}
+.h-full {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.boxed-borders {
+  border: 2px solid #ddd;
+}
+.boxed-borders-radius {
+  border-radius: 7px;
+}
+.border-radius-bottom-0 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.contribution-cell {
+  height: 11px;
+  width: 11px;
+  border-radius: 3px;
+}
+.contribution-level-0 {
+  background-color: #161b22;
+}
+.contribution-level-1 {
+  background-color: #0e4429;
+}
+.contribution-level-2 {
+  background-color: #006d32;
+}
+.contribution-level-3 {
+  background-color: #26a641;
+}
+.contribution-level-4 {
+  background-color: #39d353;
+}
+.is-year {
+  width: 120px;
+  border-radius: 7px;
+  transition-property: "background-color";
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
+}
+.is-year-active {
+  width: 120px;
+  border-radius: 7px;
+  background-color: #1f6feb;
+  color: #ddd;
+}
+.is-year:hover {
+  background-color: #ddd;
+}
+.timeline-border {
+  border-left: 2px solid #ddd;
+}
+.rounded {
+  border-radius: 50%;
+}
+.timeline-icon {
+  margin-left: -1rem;
+  background-color: #fff;
+}
