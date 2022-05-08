@@ -17,7 +17,20 @@ const RepositoryCell = ({ repository, empty = false }) => {
         <p className="mt-3">{repository.desc}</p>
       </div>
       {repository.lang ? (
-        <p className="mt-3">{repository.lang}</p>
+        <div
+          className="mt-3 is-flex is-align-items-center"
+          style={{ gap: "0.25rem" }}
+        >
+          <div
+            style={{
+              width: "12px",
+              height: "12px",
+              borderRadius: "200px",
+              backgroundColor: "black",
+            }}
+          ></div>
+          <p>{repository.lang}</p>
+        </div>
       ) : (
         <div className="mt-3">
           <span className="icon-text">

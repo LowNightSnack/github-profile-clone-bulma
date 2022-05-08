@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Main from "../components/Main";
 import MetaTags from "../components/MetaTags";
 import Navbar from "../components/Navbar";
@@ -10,11 +11,14 @@ const Home = () => {
       <MetaTags />
       <Navbar />
       <Tabs />
-      <div className="container is-flex profile-gap">
-        <Profile />
-        <main style={{ width: "100%" }}>
-          <Main />
-        </main>
+      <div className="container">
+        <div className="is-flex profile-gap">
+          <Profile />
+          <main style={{ width: "100%" }}>
+            <Main />
+          </main>
+        </div>
+        <Footer />
       </div>
     </>
   );

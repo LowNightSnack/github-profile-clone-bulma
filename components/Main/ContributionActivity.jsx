@@ -12,6 +12,9 @@ const ContributionActivity = () => {
         <ContributionActivityTimeline />
         <ContributionActivityYear />
       </div>
+      <button className="my-3 button" style={{ width: "100%" }}>
+        Show more activity
+      </button>
     </div>
   );
 };

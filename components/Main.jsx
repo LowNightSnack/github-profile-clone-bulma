@@ -2,6 +2,7 @@ import ContributionActivity from "./Main/ContributionActivity";
 import Contributions from "./Main/Contributions";
 import PopularRepositories from "./Main/PopularRepositories";
 import ReadMe from "./Main/ReadMe";
+import UnexpectedSight from "./Main/UnexpectedSight";
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
       <PopularRepositories />
       <Contributions />
       <ContributionActivity />
+      <UnexpectedSight />
     </div>
   );
 };
